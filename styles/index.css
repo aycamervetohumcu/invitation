@@ -1,0 +1,55 @@
+.body{
+    font-family: "Dancing Script", cursive;
+   
+}
+.header_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1020px;
+    max-height: 125px;
+    border: 10px;
+    background-color: rgba(219, 144, 101, 0.917);
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+}
+
+.info_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1020px;
+    height: 550px;
+    border: 10px;
+    background-color: hsla(28, 59%, 44%, 0.902);
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.info_box:hover {
+    transform: scale(1.05);
+}
+
+.confetti {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(164, 163, 152);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    animation: fall 3s infinite;
+}
+
+@keyframes fall{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+     
+}
